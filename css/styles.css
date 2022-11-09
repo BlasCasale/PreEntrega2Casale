@@ -164,7 +164,7 @@ iframe {
         height: 12rem;
     }
     .galeria__img:hover {
-        transform: scale(1.6);
+        transform: scale(1.3);
     }
     .galeria__iframe {
         margin: 2rem 0rem 2rem 0rem;
@@ -373,6 +373,10 @@ iframe {
         flex-wrap: wrap;
         justify-content: space-around;
         margin-top: 2rem;
+    }
+    .historia {
+        display: flex;
+        justify-content: center;
     }
     .card {
         margin: 10rem 0rem 0rem 5rem;

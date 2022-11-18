@@ -1,0 +1,31 @@
+@media screen and (min-width: 200px) {
+    .flex__img {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .galeria__img {
+        margin: 3rem 0rem 2rem 0rem;
+        border-top: outset 0.6rem $secundario;
+        border-right: outset 0.6rem $gris;
+        border-bottom: outset 0.6rem $secundario;
+        border-left: outset 0.6rem $gris;
+        width: 23rem;
+        height: 12rem;
+    }
+    .galeria__img:hover {
+        transform: scale(1.2);
+    }
+    .galeria__iframe {
+        margin: 2rem 0rem 2rem 0rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .flex__img {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}

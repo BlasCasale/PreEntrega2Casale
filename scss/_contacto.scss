@@ -1,0 +1,42 @@
+@media screen and (min-width: 200px) {
+    fieldset {
+        background-color: $terciario;
+        border: groove 0.4rem $secundario;
+        margin-top: 4rem;
+        width: 90%;
+    }
+    .flex__form {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 600px){
+    fieldset {
+        width: 80%;
+    }
+}
+@media screen and (min-width:1024px) {
+    fieldset {
+        width: 30rem;
+        margin-left: 4rem;
+    }
+    form {
+        color: $secundario;
+        margin-top: 1.5rem;
+        margin-left: 2rem;
+        font-weight: bold;
+    }
+    .form_boton {
+        color: $secundario;
+        background-color: $primario;
+        border: solid $secundario 0.3rem;
+        font-family: 'Eater', cursive;
+        font-weight: bold;
+        margin: 1rem 0rem;
+        width: 9rem;
+    }
+    .flex__form {
+        display: flex;
+        justify-content: flex-start;
+    }
+}

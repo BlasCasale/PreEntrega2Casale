@@ -1,0 +1,19 @@
+{
+  "name": "preentrega2casale",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlasCasale/PreEntrega2Casale.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlasCasale/PreEntrega2Casale/issues"
+  },
+  "homepage": "https://github.com/BlasCasale/PreEntrega2Casale#readme"
+}

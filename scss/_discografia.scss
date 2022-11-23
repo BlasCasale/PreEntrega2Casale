@@ -1,30 +1,22 @@
 @media screen and (min-width: 200px) {
     .flex__album {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 2rem;
+        @include flex_column_AIcenter;
+        margin-top: calc($medida + 1rem);
 }
 .album {
-    margin-top: 1rem;
+    margin-top: $medida;
 }
 }
 @media screen and (min-width: 768px) {
     .flex__album {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        @include flex_row_sp-ar;
         align-items: center;
-        margin-top: 2rem;
+        margin-top: calc($medida * 2);
     }
 }
 @media screen and (min-width: 1024px) {
     .flex__album {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-top: 2rem;
+        @include flex_row_sp-ar;
+        margin-top: calc($medida + 1rem);
     }
 }

@@ -1,42 +1,24 @@
 .fondo1 {
     background-image: url(../img/fondo_inicio.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend .fondos
 }
 .fondo2 {
     background-image: url(../img/fondo_proximos_conciertos.jfif);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend .fondos
 }
 .fondo3 {
     background-image: url(../img/fondo_discografia.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend .fondos
 }
 .fondo4 {
     background-image: url(../img/fondo_galeria.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend .fondos
 }
 .fondo5 {
     background-image: url(../img/fondo_contacto.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend .fondos
 }
 .fondo6 {
     background-image: url(../img/fondo_productos.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend .fondos
 }

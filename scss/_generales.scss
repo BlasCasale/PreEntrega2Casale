@@ -35,7 +35,7 @@ ul {
     list-style-type: none;
 }
 .titulos__h2 {
-    margin-left: 3.5rem;
+    margin-left: 2rem;
     margin-top: 2rem;
     background-color: #565857;
     color: white;
@@ -44,12 +44,10 @@ ul {
     width: max-content;
 }
 .img__header {
-    width: 6rem;
-    height: 8rem;
+    @include sizes ( 6rem, 8rem );
 }
 .a__header {
-    width: 6rem;
-    height: 8rem;
+    @include sizes ( 6rem, 8rem );
 }
 @media screen and (min-width: 200px) {
     .cabecera {
@@ -107,4 +105,16 @@ ul {
         justify-content: center;
         align-items: center;
     }
+    .titulos__h2 {
+        margin-left: 3.5rem;
+    }
+}
+
+/* Extends */
+
+.fondos {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

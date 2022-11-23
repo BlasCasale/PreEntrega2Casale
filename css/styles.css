@@ -45,7 +45,7 @@ ul {
 }
 
 .titulos__h2 {
-  margin-left: 3.5rem;
+  margin-left: 2rem;
   margin-top: 2rem;
   background-color: #565857;
   color: white;
@@ -119,53 +119,40 @@ ul {
     justify-content: center;
     align-items: center;
   }
+  .titulos__h2 {
+    margin-left: 3.5rem;
+  }
 }
-.fondo1 {
-  background-image: url(../img/fondo_inicio.png);
+/* Extends */
+.fondos, .fondo6, .fondo5, .fondo4, .fondo3, .fondo2, .fondo1 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.fondo1 {
+  background-image: url(../img/fondo_inicio.png);
 }
 
 .fondo2 {
   background-image: url(../img/fondo_proximos_conciertos.jfif);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .fondo3 {
   background-image: url(../img/fondo_discografia.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .fondo4 {
   background-image: url(../img/fondo_galeria.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .fondo5 {
   background-image: url(../img/fondo_contacto.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .fondo6 {
   background-image: url(../img/fondo_productos.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 @media screen and (min-width: 200px) {
@@ -349,14 +336,6 @@ ul {
     color: white;
     background-color: #565857;
   }
-  .entradas_boton {
-    color: white;
-    background-color: black;
-    border: solid white 0.3rem;
-    font-family: "Eater", cursive;
-    font-weight: bold;
-    width: 6.5rem;
-  }
 }
 @media screen and (min-width: 1024px) {
   .flex__entradas {
@@ -366,7 +345,8 @@ ul {
   }
   .entradas_borde {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    justify-content: space-between;
     margin-left: 3rem;
     width: 40rem;
     padding: 0.5rem 0.3rem 0.5rem 0.3rem;
@@ -374,15 +354,6 @@ ul {
     margin-block: 1.5rem;
     color: white;
     background-color: #565857;
-    justify-content: space-between;
-  }
-  .entradas_boton {
-    color: white;
-    background-color: black;
-    border: solid white 0.3rem;
-    font-family: "Eater", cursive;
-    font-weight: bold;
-    width: 6.5rem;
   }
   .barra__conciertos {
     margin-left: 3rem;
@@ -508,8 +479,8 @@ ul {
   .productos__card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     background-color: #565857;
     border: outset 0.3rem white;
     padding: 0.8rem;
@@ -555,8 +526,8 @@ ul {
   .productos__card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     background-color: #565857;
     border: outset 0.3rem white;
     padding: 0.8rem;

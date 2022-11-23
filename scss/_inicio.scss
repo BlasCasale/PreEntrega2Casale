@@ -1,7 +1,7 @@
 @media screen and (min-width: 200px) {
     .card {
         margin: 5rem 0.5rem 3rem 0.5rem;
-        padding: 0.5rem;
+        padding: calc($medida / 2);
         background-color: $terciario;
         border-top: outset 0.2rem $secundario;
         border-right: outset 0.2rem $gris;
@@ -30,7 +30,7 @@
     .card {
         margin: 10rem 0rem 0rem 5rem;
         padding: 1rem;
-        width: 50rem;
+        width: calc($medida * 50);
         background-color: $terciario;
         border-top: outset 0.4rem $secundario;
         border-right: outset 0.4rem $gris;

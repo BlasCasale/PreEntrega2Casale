@@ -2,7 +2,7 @@
     fieldset {
         background-color: $terciario;
         border: groove 0.4rem $secundario;
-        margin-top: 4rem;
+        margin-top: calc($medida * 4);
         width: 90%;
     }
     .flex__form {
@@ -17,13 +17,13 @@
 }
 @media screen and (min-width:1024px) {
     fieldset {
-        width: 30rem;
-        margin-left: 4rem;
+        width: calc($medida * 30);
+        margin-left: calc($medida + 3rem);
     }
     form {
         color: $secundario;
-        margin-top: 1.5rem;
-        margin-left: 2rem;
+        margin-top: calc($medida * 1.5);
+        margin-left: calc($medida * 2);
         font-weight: bold;
     }
     .form_boton {
@@ -33,7 +33,7 @@
         font-family: 'Eater', cursive;
         font-weight: bold;
         margin: 1rem 0rem;
-        width: 9rem;
+        width: calc($medida * 9);
     }
     .flex__form {
         display: flex;

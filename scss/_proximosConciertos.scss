@@ -21,9 +21,10 @@
         font-weight: bold;
         width: calc($medida * 6.5);
         transition: 0.6s;
-    }
-    .entradas_boton:hover {
-        transform: scale(1.06);
+
+        &:hover {
+            transform: scale(1.06);
+        }
     }
     .barra__conciertos {
         border: outset $secundario 0.2rem;

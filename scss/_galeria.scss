@@ -9,9 +9,9 @@
         border-bottom: outset 0.6rem $secundario;
         border-left: outset 0.6rem $gris;
         @include sizes ( 23rem, 12rem );
-    }
-    .galeria__img:hover {
-        transform: scale(1.2);
+        &:hover {
+            transform: scale(1.2);
+        }
     }
     .galeria__iframe {
         margin: 2rem 0rem 2rem 0rem;

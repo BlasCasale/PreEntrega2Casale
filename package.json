@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BlasCasale/PreEntrega2Casale.git"
+    "url": "git+https://github.com/BlasCasale/PreEntregaCasale.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BlasCasale/PreEntrega2Casale/issues"
+    "url": "https://github.com/BlasCasale/PreEntregaCasale/issues"
   },
-  "homepage": "https://github.com/BlasCasale/PreEntrega2Casale#readme"
+  "homepage": "https://github.com/BlasCasale/PreEntregaCasale#readme"
 }

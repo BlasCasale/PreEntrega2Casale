@@ -45,9 +45,28 @@ ul {
 }
 .img__header {
     @include sizes ( 6rem, 8rem );
+    animation-name: agrandar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 .a__header {
     @include sizes ( 6rem, 8rem );
+    animation-name: agrandar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes agrandar {
+    0% {scale: 1;}
+    10% {scale: 1.01;}
+    20% {scale: 1.02;}
+    30% {scale: 1.03;}
+    40% {scale: 1.04;}
+    50% {scale: 1.05;}
+    60% {scale: 1.04;}
+    70% {scale: 1.03;}
+    80% {scale: 1.02;}
+    90% {scale: 1.01;}
+    100% {scale: 1;}
 }
 @media screen and (min-width: 200px) {
     .cabecera {
@@ -56,10 +75,12 @@ ul {
         justify-items: center;
         align-content: center;
         background-image: linear-gradient(to bottom, $primario, $terciario );
+        gap: 2rem;
     }
     header {
         display: flex;
         justify-content: center;
+        margin-top: 1rem;
     }
     nav {
         display: flex;
@@ -86,19 +107,20 @@ ul {
     }
 }
 @media screen and (min-width: 1024px) {
+    .cabecera {
+        display: grid;
+        grid-template-columns: 20% auto;
+        grid-template-rows: 12rem;
+    }
+    header {
+        margin-top: 0rem;
+    }
     nav ul {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
         gap: 0.8rem;
-    }
-    .cabecera {
-        display: grid;
-        grid-template-areas: 
-        "header nav nav";
-        grid-template-columns: 20% 80%;
-        grid-template-rows: 12rem;
     }
     .header__flex {
         display: flex;

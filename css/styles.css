@@ -1,4 +1,5 @@
-/* Colores */
+@charset "UTF-8";
+/* Colores */ /* Código de etiquetas y reseteos */
 * {
   margin: 0;
   padding: 0;
@@ -42,6 +43,19 @@ form {
 
 ul {
   list-style-type: none;
+}
+
+h1 {
+  padding: 1rem;
+  color: white;
+  font-size: 3.8rem;
+}
+
+/* Código del header */
+.flex__titulo {
+  display: flex;
+  justify-content: center;
+  background-color: black;
 }
 
 .titulos__h2 {
@@ -105,69 +119,6 @@ ul {
     scale: 1;
   }
 }
-@media screen and (min-width: 200px) {
-  .cabecera {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-content: center;
-    background-image: linear-gradient(to bottom, black, #565857);
-    gap: 2rem;
-  }
-  header {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-  nav {
-    display: flex;
-    justify-content: center;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  nav {
-    display: flex;
-    justify-content: center;
-  }
-  nav ul {
-    display: flex;
-    flex-flow: row wrap;
-  }
-  a {
-    margin-right: 1.5rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .cabecera {
-    display: grid;
-    grid-template-columns: 20% auto;
-    grid-template-rows: 12rem;
-  }
-  header {
-    margin-top: 0rem;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 0.8rem;
-  }
-  .header__flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .titulos__h2 {
-    margin-left: 3.5rem;
-  }
-}
 /* Extends */
 .fondos, .fondo6, .fondo5, .fondo4, .fondo3, .fondo2, .fondo1 {
   background-attachment: fixed;
@@ -201,6 +152,31 @@ ul {
 }
 
 @media screen and (min-width: 200px) {
+  /* Header */
+  .cabecera {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    background-image: linear-gradient(to bottom, black, #565857);
+    gap: 2rem;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Index */
   .card {
     margin: 5rem 0.5rem 3rem 0.5rem;
     padding: 0.5rem;
@@ -223,32 +199,7 @@ ul {
     color: white;
     width: auto;
   }
-}
-@media screen and (min-width: 1024px) {
-  .historia {
-    display: flex;
-    justify-content: center;
-  }
-  .card {
-    margin: 10rem 0rem 0rem 5rem;
-    padding: 1rem;
-    width: 50rem;
-    background-color: #565857;
-    border-top: outset 0.4rem white;
-    border-right: outset 0.4rem grey;
-    border-bottom: outset 0.4rem white;
-    border-left: outset 0.4rem grey;
-  }
-  .card__title {
-    color: white;
-    margin: 1rem 0rem 1.5rem 1rem;
-  }
-  .card__title-parrafo {
-    color: white;
-    width: auto;
-  }
-}
-@media screen and (min-width: 200px) {
+  /* Proximos Conciertos */
   .flex__entradas {
     display: flex;
     flex-direction: column;
@@ -363,78 +314,7 @@ ul {
       width: 10rem;
     }
   }
-}
-@media screen and (min-width: 600px) {
-  .flex__entradas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .entradas_borde {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    width: 33rem;
-    padding: 0.5rem 0.3rem 0.5rem 0.3rem;
-    border: groove 0.4rem white;
-    margin-top: 2rem;
-    color: white;
-    background-color: #565857;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .flex__entradas {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .entradas_borde {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 3rem;
-    width: 40rem;
-    padding: 0.5rem 0.3rem 0.5rem 0.3rem;
-    border: groove 0.4rem white;
-    margin-block: 1.5rem;
-    color: white;
-    background-color: #565857;
-  }
-  .barra__conciertos {
-    margin-left: 3rem;
-  }
-}
-@media screen and (min-width: 200px) {
-  .flex__album {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
-  }
-  .album {
-    margin-top: 1rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .flex__album {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 2rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .flex__album {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 2rem;
-  }
-}
-@media screen and (min-width: 200px) {
+  /* Galeria */
   .flex__img {
     display: flex;
     flex-direction: row;
@@ -456,16 +336,17 @@ ul {
   .galeria__iframe {
     margin: 2rem 0rem 2rem 0rem;
   }
-}
-@media screen and (min-width: 1024px) {
-  .flex__img {
+  /* Discografia */
+  .flex__album {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
   }
-}
-@media screen and (min-width: 200px) {
+  .album {
+    margin-top: 1rem;
+  }
+  /* Contacto */
   fieldset {
     background-color: #565857;
     border: groove 0.4rem white;
@@ -476,38 +357,7 @@ ul {
     display: flex;
     justify-content: center;
   }
-}
-@media screen and (min-width: 600px) {
-  fieldset {
-    width: 80%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  fieldset {
-    width: 30rem;
-    margin-left: 4rem;
-  }
-  form {
-    color: white;
-    margin-top: 1.5rem;
-    margin-left: 2rem;
-    font-weight: bold;
-  }
-  .form_boton {
-    color: white;
-    background-color: black;
-    border: solid white 0.3rem;
-    font-family: "Eater", cursive;
-    font-weight: bold;
-    margin: 1rem 0rem;
-    width: 9rem;
-  }
-  .flex__form {
-    display: flex;
-    justify-content: flex-start;
-  }
-}
-@media screen and (min-width: 200px) {
+  /* Productos */
   .grilla {
     display: grid;
     grid-template-areas: "productos";
@@ -532,8 +382,57 @@ ul {
     color: white;
     width: 15rem;
   }
+  .productos__card-img {
+    width: 16.5rem;
+    height: 18rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* Proximos Conciertos */
+  .flex__entradas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .entradas_borde {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 33rem;
+    padding: 0.5rem 0.3rem 0.5rem 0.3rem;
+    border: groove 0.4rem white;
+    margin-top: 2rem;
+    color: white;
+    background-color: #565857;
+  }
+  /* Contacto */
+  fieldset {
+    width: 80%;
+  }
 }
 @media screen and (min-width: 768px) {
+  /* Header */
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  nav ul a {
+    margin-right: 1.5rem;
+  }
+  /* Discografia */
+  .flex__album {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  /* Productos */
   .grilla {
     display: grid;
     grid-template-areas: "productos productos";
@@ -550,6 +449,114 @@ ul {
   }
 }
 @media screen and (min-width: 1024px) {
+  /* Heaeder */
+  .cabecera {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 12rem;
+  }
+  header {
+    margin-top: 0rem;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .header__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .titulos__h2 {
+    margin-left: 3.5rem;
+  }
+  /* Index */
+  .historia {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    margin: 10rem 0rem 0rem 5rem;
+    padding: 1rem;
+    width: 50rem;
+    background-color: #565857;
+    border-top: outset 0.4rem white;
+    border-right: outset 0.4rem grey;
+    border-bottom: outset 0.4rem white;
+    border-left: outset 0.4rem grey;
+  }
+  .card__title {
+    color: white;
+    margin: 1rem 0rem 1.5rem 1rem;
+  }
+  .card__title-parrafo {
+    color: white;
+    width: auto;
+  }
+  /* Proximos Conciertos */
+  .flex__entradas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .entradas_borde {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 3rem;
+    width: 40rem;
+    padding: 0.5rem 0.3rem 0.5rem 0.3rem;
+    border: groove 0.4rem white;
+    margin-block: 1.5rem;
+    color: white;
+    background-color: #565857;
+  }
+  .barra__conciertos {
+    margin-left: 3rem;
+  }
+  /* Galeria */
+  .flex__img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  /* Discografia */
+  .flex__album {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+  /* Contacto */
+  fieldset {
+    width: 30rem;
+    margin-left: 4rem;
+  }
+  form {
+    color: white;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    font-weight: bold;
+  }
+  form_boton {
+    color: white;
+    background-color: black;
+    border: solid white 0.3rem;
+    font-family: "Eater", cursive;
+    font-weight: bold;
+    margin: 1rem 0rem;
+    width: 9rem;
+  }
+  .flex__form {
+    display: flex;
+    justify-content: flex-start;
+  }
+  /* Productos */
   .grilla {
     display: grid;
     grid-template-areas: "productos productos productos";
